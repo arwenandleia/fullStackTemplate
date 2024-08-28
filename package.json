@@ -1,0 +1,16 @@
+{
+	"name": "fullstacktemplate",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"install-server": "npm install --prefix server",
+		"install-client": "npm install --prefix client",
+		"install": "npm run install-server && npm run install-client",
+		"dev": "npm run dev --prefix client & npm run watch --prefix server",
+		"deploy": "npm run build --prefix client && npm run start --prefix server"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"description": ""
+}
